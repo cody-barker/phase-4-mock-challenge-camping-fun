@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   resources :activities, only: [:index, :show, :destroy]
-  resources :campers, only: [:index, :show]
+  resources :campers, only: [:index, :show, :create]
 end
