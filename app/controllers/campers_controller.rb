@@ -7,7 +7,7 @@ class CampersController < ApplicationController
 
     def show
         camper = find_camper
-        render json: camper
+        render json: camper, include: []
     end
 
     private
